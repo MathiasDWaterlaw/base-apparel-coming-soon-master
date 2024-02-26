@@ -13,10 +13,14 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   display: grid;
   grid-template-columns: 57.7% auto;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -25,6 +29,7 @@ body {
                     linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 4rem 13.8rem 0 8.8rem;
 }
 
 #hero-section {
@@ -37,13 +42,9 @@ body {
   display: none;
 }
 
-#main-section {
-  padding: 4rem 13.8rem 0 8.8rem;
-}
-
 #container {
   min-width: 367px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #description {
@@ -87,8 +88,6 @@ body {
   font-size: 1rem;
   background-color: transparent;
   outline: none;
-
-  /* border: 2px solid var(--soft-red); */
 }
 
 #form div #icon-error {
@@ -118,7 +117,11 @@ body {
 
 #form #submit-btn:hover {
   box-shadow: hsla(0, 36%, 70%, 0.7) 0px 15px 25px 2px;
+}
+
+#form #submit-btn:active {
   background: hsl(0, 80%, 86%);
+
 }
 
 #form #invalid-container {
@@ -130,12 +133,6 @@ body {
   color: var(--soft-red);
   font-size: 0.85rem;
 }
-
-.hidden {
-  display: none;
-}
-
-
 
 #attribution-section {
   margin: 3rem 0 1rem 0;
@@ -153,3 +150,68 @@ body {
 #attribution-section a:visited {
   color: var(--soft-red);
 }
+
+
+@media (width <= 1024px) {
+
+    body {
+      display: block;
+      background-color: hsla(0, 80%, 86%, 0.15);
+    }
+
+    body, #main-section, #container {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+    }
+
+    #hero-section {
+      display: none;
+    }
+    
+    #main-section {
+      background: none;
+      border: none;
+    }
+
+    header {
+      padding: 1.9rem 2rem;
+    }
+
+    header img {
+      width: 6.5rem;
+    }
+
+    #mobile-hero{
+      display: block;
+    }
+    
+    #mobile-hero img {
+      width: 100%;
+    }
+
+    #description {
+      text-align: center;
+      margin: 0 1.7rem;
+      padding: 4rem 0;
+
+      /* border: 1PX solid black; */
+    }
+
+    #description h1 {
+      font-size: 2.5rem;
+      line-height: normal;
+      letter-spacing: 0.6rem;
+    }
+
+    #description p {
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+
+    #form #submit-btn {
+      padding: 1.01rem 2rem;
+    }
+  }

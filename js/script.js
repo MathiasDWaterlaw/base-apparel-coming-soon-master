@@ -9,9 +9,10 @@ const iconError = document.getElementById('icon-error');
 
 submitButton.addEventListener('click', () => {
     const email = emailInput.value;
-        invalidContainer.className = 'hidden';
-        iconError.className = 'hidden';
-        emailInput.style.border = '1px solid var(--desaturated-red)';
+    invalidContainer.className = 'hidden';
+    iconError.className = 'hidden';
+    emailInput.style.border = '1px solid var(--desaturated-red)';
+
 
     if(!emailRegex.test(email)) {
         invalidContainer.classList.remove('hidden');
