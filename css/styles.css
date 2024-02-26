@@ -37,8 +37,13 @@ body {
   display: none;
 }
 
+#main-section {
+  padding: 4rem 13.8rem 0 8.8rem;
+}
+
 #container {
-  padding: 4rem 13.8rem 0 10.2rem;
+  min-width: 367px;
+  border: 1px solid black;
 }
 
 #description {
@@ -63,6 +68,7 @@ body {
   color: var(--desaturated-red);
   font-weight: 400;
   line-height: 1.75rem;
+  margin-right: 2rem;
 }
 
 #form {
@@ -126,7 +132,7 @@ body {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
 
 
