@@ -81,13 +81,19 @@ body {
   background-color: transparent;
 }
 
+#email::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.5;
+}
+
 #form #submit-btn {
   position: absolute;
-  padding: 1rem 2.7rem;
+  padding: 1.01rem 2.8rem;
   border-radius: 35px;
   border: none;
   right: 0;
   background:  linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+  box-shadow: hsla(0, 36%, 70%, 0.4) 0px 15px 25px 2px;
 }
 
 
@@ -95,4 +101,17 @@ body {
 
 #attribution-section {
   margin-top: 3rem;
+  color: var(--desaturated-red);
+}
+
+#attribution-section a {
+  color: var(--dark-grey-red);
+}
+
+#attribution-section a:hover {
+  color: var(--desaturated-red);
+}
+
+#attribution-section a:visited {
+  color: var(--soft-red);
 }
