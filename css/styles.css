@@ -44,7 +44,6 @@ body {
 
 #container {
   min-width: 367px;
-  /* border: 1px solid black; */
 }
 
 #description {
@@ -195,8 +194,6 @@ body {
       text-align: center;
       margin: 0 1.7rem;
       padding: 4rem 0;
-
-      /* border: 1PX solid black; */
     }
 
     #description h1 {
