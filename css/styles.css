@@ -22,7 +22,8 @@ body {
 }
 
 #main-section {
-  background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+  background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), 
+                    linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -38,7 +39,7 @@ body {
 }
 
 #container {
-  padding: 4rem 0 0 10.2rem;
+  padding: 4rem 13.8rem 0 10.2rem;
 }
 
 #description {
@@ -47,13 +48,51 @@ body {
 
 #description h1 {
   font-weight: 600;
-  font-size: 4.15rem;
+  font-size: 4.14rem;
   letter-spacing: 1rem;
-  line-height: 4.25rem;
+  line-height: 4.27rem;
   color: var(--dark-grey-red);
+  margin-bottom: 1.3rem;
 }
 
 #description h1 span {
   color: var(--desaturated-red);
   font-weight: 300;
+}
+
+#description p {
+  color: var(--desaturated-red);
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+#form {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+#form #email {
+  width: 100%;
+  padding: 1.2rem 2.3rem;
+  border-radius: 35px;
+  border: 1px solid var(--desaturated-red);
+  font-family: 'Josefin Sans';
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+#form #submit-btn {
+  position: absolute;
+  padding: 1rem 2.7rem;
+  border-radius: 35px;
+  border: none;
+  right: 0;
+  background:  linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+}
+
+
+
+
+#attribution-section {
+  margin-top: 3rem;
 }
